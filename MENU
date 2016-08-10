@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{int  o,a,b, op;
+
+do{
+
+ cout<<"\nM E N U\n";
+ cout<<"1.- S U M A\n";
+ cout<<"2.- R E S T A\n";
+ cout<<"3.- P R O D U C T O\n";
+ cout<<"4.- D I V I S I O N\n";
+ cout<<"0.- F I N\n";
+ cout<<"OPCION: ";
+ cin>>op;
+ switch (op)
+  {case 1: 
+   cout<<"\nIntrodusca 2 numeros:";
+   cin>>a; cin>>b;
+   o= a+b;
+    cout << "El resultado es " << o << endl;
+   break;
+   case 2:
+   cout<<"\nIntrodusca 2 numeros:";
+   cin>>a; cin>>b;
+   o=a-b;
+    cout << "El resultado es " << o << endl;
+   break;
+   case 3:
+   cout<<"\nIntrodusca 2 numeros:";
+   cin>>a; cin>>b;
+   o=a*b;
+   break;
+    cout << "El resultado es " << o << endl;
+   case 4:
+   cout<<"\nIntrodusca 2 numeros:";
+   cin>>a; cin>>b;
+   o=a/b;
+    cout << "El resultado es " << o << endl;
+   break;
+   default:
+	   cout<<"\nF I N ";
+  }
+}while(op!=0);
+
+
+
+ getch ();
+}
+
